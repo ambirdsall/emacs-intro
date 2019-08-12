@@ -11,15 +11,15 @@ What are those properties? Well:
 1) Emacs is configured with a full-fledged, high-level programming language, with functions, control
    flow, etc. Emacs lisp is a dynamic functional language; the syntax is out of the ordinary, but
    under the hood, it's a little like old-school javascript with an emphasis on linked lists,
-   strings, and buffers (more on them later). Except for macros, which are powerful like magic, only
-   less... magical.
+   strings, and text buffers. Except for macros, which are powerful like magic, only less...
+   magical.
 
 2) Literally everything you can do in emacs, including really basic stuff like "move the cursor
-  forwards 15 characters" and "insert the text ~function fo() { return "whoops, typo" }~" can be
+  forwards 15 characters" and "insert the text ~function fo() { return "haha this was not named foo" }~" can be
   scripted with emacs lisp. Here:
   #+BEGIN_SRC emacs-lisp
   (forward-char 15)
-  (insert "function fo() { return \"whoops, typo\" }")
+  (insert "function fo() { return \"haha this was not named foo\" }")
   #+END_SRC
 
 3) Literally every user interaction follows the same model: you hit a key (or equivalent, like
@@ -89,8 +89,9 @@ top of emacs. They add in useful third-party libraries (in some cases, so useful
 facto standards), update the styling so emacs looks like it's from the present, instead of the
 mid-90s, and usually offer a bunch of variables you can tweak to easily toggle features and stuff.
 They're generally intended to be a more powerful and beautiful "batteries included" starting point
-for people.
-*** If you like pina coladas, and getting stuck in a vim session
+for people. To install a starter kit, just clone the project repository to =~/.emacs.d=; when you next
+start emacs, it will automatically load that code.
+*** If you like piña coladas, and getting stuck in a vim session
 My favorite is Spacemacs (http://spacemacs.org/). It's also probably the most popular, and
 therefore the best supported, with the most stack overflow answers a quick google away. Spacemacs
 is written by and for people who like vim's command language (which is an insanely good fit for
