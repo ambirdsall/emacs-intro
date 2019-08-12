@@ -198,4 +198,6 @@ else, ~org-mode~ is worth it.
 
 Honest-to-god: take 30ish minutes of your life (you don't need to watch the Q and A for pete's sake)
 and watch this presentation that Carsten Dominik, the German astronomer who authored org-mode, gave at
-google: https://www.youtube.com/watch?v=oJTwQvgfgMMq
+google:
+
+@@html:<iframe width="560" height="315" src="https://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>@@
