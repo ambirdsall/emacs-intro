@@ -181,6 +181,12 @@ or a git dashboard? Is it some elisp function's documentation? That's the major 
 =M-x= to change the major mode (they're just functions, under the hood), and interact with the buffer
 contents in a different way, but you almost never have to.
 
+You can only have one major mode per buffer, but you can have as many minor modes as you want.
+Minor modes tend to wrap a few related functions and settings into some feature, so you can easily
+toggle the feature by (de)activating the minor mode. Autocomplete is a minor mode. Spell-check is a
+minor mode. [[https://elpa.gnu.org/packages/rainbow-mode.html][rainbow-mode]] is a minor mode, and makes writing CSS so much nicer. A [[https://github.com/TeMPOraL/nyan-mode][nyan cat status bar]]
+to tell you how far into a buffer you are? Minor mode. Most features are minor modes.
+
 ** [one of] the killer app[s]: org-mode
 ~org-mode~ is sort of like markdown on steroids. You can rearrange the order and level of headings
 interactively on the fly; edit code snippets as if they were actual files, with full language
