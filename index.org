@@ -2,8 +2,8 @@
 * why emacs is worth the bother
 Emacs has a few unusual properties which work together really well, making for a super powerful,
 flexible system that's easier to bend to your will in sophisticated ways than almost anything
-else around. That might sound a little intimidating, but most day-to-day emacs usage isn't
-reinventing the world; but when you want to do something custom, the power is right at your
+else around. That might sound like a lot of work, but most day-to-day emacs usage isn't
+reinventing the world; when you want to do something custom, though, the power is right at your
 fingertips. Literally.
 
 What are those properties? Well:
