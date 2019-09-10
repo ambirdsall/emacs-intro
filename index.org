@@ -132,8 +132,8 @@ Two modifier keys are king in emacs: control, which is the control key, and meta
 key. It's weird, but emacs literally predates the alt key being standard. Meta is =M-[something]= in
 keybinding notation.
 
-If you're a hipster like me, you might rebind the mac command key to meta instead. Emacs is what
-you make it.
+If you're a hipster like me, you might switch things up so that the mac command key is meta
+instead of alt. Emacs is what you make it.
 
 *** First command to learn: =M-x= lets you run commands by name
 A decent starter configuration will give you a nice fuzzy search interface when you hit =M-x=. Start
@@ -144,7 +144,7 @@ example, =M-x snake= starts a game of snake, and =M-x doctor= starts a psychothe
 everyone's favorite 1960s chatbot ELIZA.
 
 *** First commands to learn: what to do when you panic
-There's a reason =C-x c= was the example I chose: it's how you close emacs and end your session.
+=C-x C-c= 
 
 Within a session, if emacs freezes, or starts acting weird, or you mistype and find yourself halfway
 into the wrong key sequence, start spamming =C-g= to cancel out of whatever the current thing is. The
@@ -156,14 +156,16 @@ the rare occasion =C-g= doesn't work, three escapes usually will.
 Really quick commands you will do while you type code/prose/emails/whatever are bound to control
 [something] or meta [something], so you can just bust them out quickly. Commands that are common but
 that you're less likely to use in quick succession, like saving, managing your windows, quitting
-emacs, etc, are under the =C-x= prefix (the "x" is for "execute": Emacs tries to make stuff mnemonic).
-Commands that are less common than that, you type =M-x= and find them by name.
+emacs, etc, are under the =C-x= prefix (the "x" is for "execute command": Emacs tries to make stuff
+mnemonic). Commands that are less common than that (or when you remember the name but not the
+keybinding), you can type =M-x= and find them by name. The similarity of the two "execute command"
+keybindings, =C-x= and =M-x,= is not a coincidence. Mnemonic, remember?
 
-That fits into the standard hierarchy (of sorts) for what different modifier keys mean with the same
-mnemonic. =C-f= goes forwards one character; =M-f= goes forwards one word; =C-M-f= goes forward one
-semantic unit (paired quotes or braces, a code block, or whatever: different language modes can
-define what a semantic unit is, and emacs has some more-or-less sensible global defaults). When
-"same thing, but with a wider scope" doesn't maake sense, sometimes control and meta do opposite
+That's a decent intro to the standardish sort-of-hierarchy for what different modifier keys mean
+with the same key. =C-f= goes forwards one character; =M-f= goes forwards one word; =C-M-f= goes
+forward one semantic unit (paired quotes or braces, a code block, or whatever: different language
+modes can define what a semantic unit is, and emacs has some more-or-less sensible global defaults).
+When "same thing, but with a wider scope" doesn't make sense, sometimes control and meta do opposite
 versions of the same thing. I don't want to bog you down with examples, though: you can get by for a
 while using arrow keys, the mouse, and a small handful of memorized commands.
 

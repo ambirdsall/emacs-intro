@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>A Semi-Quick Introduction To Emacs</title>
-<!-- 2019-08-12 Mon 14:40 -->
+<!-- 2019-09-10 Tue 00:25 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Org-mode">
@@ -417,8 +417,8 @@ keybinding notation.
 </p>
 
 <p>
-If you're a hipster like me, you might rebind the mac command key to meta instead. Emacs is what
-you make it.
+If you're a hipster like me, you might switch things up so that the mac command key is meta
+instead of alt. Emacs is what you make it.
 </p>
 </div>
 
@@ -440,7 +440,7 @@ everyone's favorite 1960s chatbot ELIZA.
 <h4 id="sec-3-3-2"><span class="section-number-4">3.3.2</span> First commands to learn: what to do when you panic</h4>
 <div class="outline-text-4" id="text-3-3-2">
 <p>
-There's a reason <code>C-x c</code> was the example I chose: it's how you close emacs and end your session.
+<code>C-x C-c</code> 
 </p>
 
 <p>
@@ -460,16 +460,18 @@ the rare occasion <code>C-g</code> doesn't work, three escapes usually will.
 Really quick commands you will do while you type code/prose/emails/whatever are bound to control
 [something] or meta [something], so you can just bust them out quickly. Commands that are common but
 that you're less likely to use in quick succession, like saving, managing your windows, quitting
-emacs, etc, are under the <code>C-x</code> prefix (the "x" is for "execute": Emacs tries to make stuff mnemonic).
-Commands that are less common than that, you type <code>M-x</code> and find them by name.
+emacs, etc, are under the <code>C-x</code> prefix (the "x" is for "execute command": Emacs tries to make stuff
+mnemonic). Commands that are less common than that (or when you remember the name but not the
+keybinding), you can type <code>M-x</code> and find them by name. The similarity of the two "execute command"
+keybindings, <code>C-x</code> and <code>M-x,</code> is not a coincidence. Mnemonic, remember?
 </p>
 
 <p>
-That fits into the standard hierarchy (of sorts) for what different modifier keys mean with the same
-mnemonic. <code>C-f</code> goes forwards one character; <code>M-f</code> goes forwards one word; <code>C-M-f</code> goes forward one
-semantic unit (paired quotes or braces, a code block, or whatever: different language modes can
-define what a semantic unit is, and emacs has some more-or-less sensible global defaults). When
-"same thing, but with a wider scope" doesn't maake sense, sometimes control and meta do opposite
+That's a decent intro to the standardish sort-of-hierarchy for what different modifier keys mean
+with the same key. <code>C-f</code> goes forwards one character; <code>M-f</code> goes forwards one word; <code>C-M-f</code> goes
+forward one semantic unit (paired quotes or braces, a code block, or whatever: different language
+modes can define what a semantic unit is, and emacs has some more-or-less sensible global defaults).
+When "same thing, but with a wider scope" doesn't make sense, sometimes control and meta do opposite
 versions of the same thing. I don't want to bog you down with examples, though: you can get by for a
 while using arrow keys, the mouse, and a small handful of memorized commands.
 </p>
@@ -562,8 +564,8 @@ google:
 </div></div></div>
 <footer id="postamble" class="">
 <div><p class="author">Author: Alex Birdsall</p>
-<p class="date">Created: 2019-08-12 Mon 14:40</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.2 (<a href="http://orgmode.org">Org-mode</a> 9.2.4)</p>
+<p class="date">Created: 2019-09-10 Tue 00:25</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.2 (<a href="http://orgmode.org">Org-mode</a> 9.2.5)</p>
 </div>
 </footer>
 </body>
